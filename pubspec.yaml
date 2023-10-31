@@ -1,0 +1,47 @@
+name: flutter_template_v3
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  # 本地多语言
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.2
+  # 网络请求工具
+  dio: ^5.3.3
+  # 事件总线
+  event_bus: ^2.0.0
+  # toast工具
+  oktoast: ^3.2.0
+  # 文件目录路径获取
+  path_provider: ^2.1.1
+  # 状态管理
+  provider: ^6.0.5
+  # 本地存储管理
+  shared_preferences: ^2.2.2
+  # 路由管理
+  fluro: ^2.0.5
+  # 屏幕适配
+  flutter_screenutil: ^5.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+  # 释放images资源
+  assets:
+    - images/
+  # 生成多语言配置文件
+  generate: true
+flutter_intl:
+  enabled: true
